@@ -1,13 +1,14 @@
-swal("CHOO CHOO MFER");
+// swal("CHOO CHOO MFER");
 
   // Initialize Firebase
- var config = {
+  // Initialize Firebase
+  var config = {
     apiKey: "AIzaSyBkud8kbytpaIpdmyKSKcJlxc5pfrzZVzY",
     authDomain: "train2-b9855.firebaseapp.com",
     databaseURL: "https://train2-b9855.firebaseio.com",
     storageBucket: "train2-b9855.appspot.com",
     messagingSenderId: "2951539288"
-  }
+  };
  
 // //push to fire base - new train is defined by input variables 
 //   database.ref().push(newTrain); 
@@ -29,8 +30,10 @@ var destination = "";
 var firstTrain = "";
 var frequency = "";
 
-  $("userSubmit").on("click", function(){
+
+  $("#userSubmit").on("click", function(){
       trainName = $("#nameInput").val().trim();
+      console.log(trainName);
       destination = $("#destinationInput").val().trim();
       firstTrain = $("#firstInput").val().trim();
       frequency = $("#freqInput").val().trim();
@@ -40,9 +43,9 @@ var frequency = "";
           destination: destination,
           firstTrain: firstTrain,
           frequency: frequency
-   
-      }
-      database.ref().push(newTrain)
+      };
+
+      database.ref().push(newTrain);
 
       return false; 
   })
