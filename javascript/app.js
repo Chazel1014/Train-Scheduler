@@ -2,11 +2,11 @@ swal("CHOO CHOO MFER");
 
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyCaUiSfy988gw2xfVzw3Yn0myzJ-5UbCcI",
-    authDomain: "train-scheduler-454f8.firebaseapp.com",
-    databaseURL: "https://train-scheduler-454f8.firebaseio.com",
-    storageBucket: "train-scheduler-454f8.appspot.com",
-    messagingSenderId: "682983660240"
+    apiKey: "AIzaSyDwvBZ3_qCemmiHE2YBO-MQ3yO1GCVthbE",
+    authDomain: "train-schedule-e8b72.firebaseapp.com",
+    databaseURL: "https://train-schedule-e8b72.firebaseio.com",
+    storageBucket: "train-schedule-e8b72.appspot.com",
+    messagingSenderId: "249296000053"
   };
   
   // firebase.initializeApp(config);
@@ -46,10 +46,11 @@ var frequency = "";
           firstTrain: firstTrain
           frequency: frequency,
 
-          // event.preventDefault();
-          return false; 
+          // event.preventDefault();     
+      })
+
+      return false; 
   })
-})
 
 
 
