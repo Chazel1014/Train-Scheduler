@@ -10,7 +10,7 @@
 
 <nav class = "green lighten-4">
 	<div class="container">
-	     <a href="#" class="brand-logo center">Train Schedule</a>
+	     <h1><a href="#" class="brand-logo center">Train Schedule</a></h1>
 	</div>
 </nav>
 <br>
@@ -20,7 +20,7 @@
 
 <table class="highlight">
        <thead> 
-       <div class = "teal darken-4 col-s12"> <span class="white-text bold">Current Train Schedule</span></div>
+       <div class = "teal darken-4 col-s12"> <h5 class="white-text bold">Current Train Schedule</h5></div>
          <tr>
              <th data-field="name">Train Name</th>
              <th data-field="place">Destination</th>
@@ -75,25 +75,41 @@
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input id="destination" type="text" class="validate">
           <label for="destination">Destination</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input id="first_train" type="text" class="validate">
           <label for="first_train">First Train TIme (HH:mm - military time)</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input id="frequency" type="text" class="validate">
           <label for="frequency">Frequency</label>
         </div>
       </div>
     </form>
-  </div></section>
+  </div>
+
+  </section>
+
+<!-- link to firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCtu17QLbFJTtEV5UOMYW89RbrWNMRttPE",
+    authDomain: "train-schedule-20c79.firebaseapp.com",
+    databaseURL: "https://train-schedule-20c79.firebaseio.com",
+    storageBucket: "train-schedule-20c79.appspot.com",
+    messagingSenderId: "574817465317"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <!-- link to jquery -->
 <script src="https://code.jquery.com/jquery.js"></script>
